@@ -56,7 +56,7 @@
 
 .holmes-debug a[href="#"],
 .holmes-debug a[href^="javascript"]{
-	outline: 3px solid yellow;
+	outline: 3px solid #fd0;
 }
 
 /**************
@@ -108,7 +108,7 @@
 .holmes-debug [onload],
 .holmes-debug [onunload]
  */{ 
-	outline: 3px solid yellow;
+	outline: 3px solid #fd0;
  }
  
 /*************************************************************************
@@ -163,5 +163,5 @@ body.holmes-debug[leftmargin] {
 .holmes-debug p:empty,
 .holmes-debug td:empty, 
 .holmes-debug th:empty {
-	border: 3px solid yellow;
+	border: 3px solid #fd0;
 }

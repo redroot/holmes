@@ -1,0 +1,169 @@
+/*
+	Styles for Holmes.css landing page
+	@author Luke Williams
+	@version 25.04.11
+	
+	uses inuit.css for a base
+*/
+
+body { 
+	font-size: 14px; 
+	line-height: 22px; 
+	border-top: 10px solid #003455; 
+	border-bottom: 10px solid #003455;
+	background: #fff;
+}
+
+/*
+	Layout
+*/
+
+#header { 
+	margin: 0px 0px 20px 0px; 
+	padding-top: 10px;
+}
+	#header h1 { 
+		float: left; 
+		width: 45%; 
+	}
+	#header p#intro { 
+		float: right; 
+		width: 50%; 
+		background: #212121; 
+		color: #f0f0f0; 
+		padding: 10px;
+		margin-top: 10px;
+	}
+
+#example { 
+	padding: 20px 0px; margin-bottom: 20px; background: #f6f6f6;
+}
+	#example span, #example small { 
+		display: block; 
+		color: #666; 
+		margin-bottom: 15px; 
+		font-size: 90%;
+	}
+	
+	
+	
+	#example .exampleInfo, #example h3 { 
+		padding-left: 10px; 
+		width: 450px; 
+		float: left; 
+	}
+		#example .exampleInfo .button { 
+			margin-bottom: 15px;
+		}
+	
+	#example .tests { 
+		background-color: #e9e9e9; 
+		margin-right: 15px; 
+		padding: 5px;
+	}
+	
+	#download { 
+		margin-bottom: 10px; 
+		background: #fef8c4;
+		padding: 20px 10px 10px;
+	}
+	
+	
+	
+/*
+	Content
+*/
+
+h1 { 
+	font-family: 'Pacifico', serif; font-size: 2.8em; 
+}
+	h1 small {
+		font-family: 'Calibiri', Arial, sans-serif; 
+		font-size: 0.5em; 
+		colour: #222; 
+	}
+	
+h3 { 
+	font-family: 'Pacifico', serif;
+	
+}
+
+#content h3 {
+		border-bottom: 1px solid #ccc;
+	}
+
+a, a:visited {
+	color: #003455; 
+	background: #e8e8e8; 
+}
+a:hover {
+	color: #212121; 
+	background: #d8d8d8; 
+	text-decoration: none; 
+}
+
+a.suiteLink, a.suiteLink:visited { 
+	color: #fff; background: #003455; padding: 10px; 
+	font-weight: bold;
+	margin-top: 20px;
+	}
+a.suiteLink:hover { 
+	background: #212121; 
+}
+
+.button{
+		background:#ddd;
+		background:-moz-linear-gradient(-90deg,#eee,#ccc);
+		background:-webkit-gradient(linear,left top,left bottom,from(#f0f0f0),to(#ddd));
+		display: inline-block;
+		margin-bottom: 0px 5px;
+		padding:5px 10px;
+		text-shadow:0 -1px 0 rgba(0,0,0,0.25), 0 1px 0 rgba(255,255,255,0.25);
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		border-radius:10px;
+		border: 1px solid #ccc;
+	}
+	.button:hover{
+		text-decoration:none;
+		background:-webkit-gradient(linear,left top,left bottom,from(#ddd),to(#f0f0f0));
+	}
+
+/*
+	Utility
+*/
+
+.red { outline: 2px solid red; }
+.yellow { outline:2px solid #fd0; }
+.darkgrey { outline: 2px solid darkgrey; }
+
+.showOnMobile {visibility: hidden; }
+.noborder { border: none !important; }
+
+.kill {clear: both; height: 1px; font-size: 1px; }
+
+/*
+	Media Queries
+*/
+
+@media (min-width: 721px) and (max-width: 960px){
+	#header h1 small { font-size: 0.4em; display: block; }
+	#example .exampleInfo { padding-left: 10px; width: 330px;  }
+
+
+}
+
+@media (max-width: 720px) {
+	#header h1 small { font-size: 0.4em; display: block; }
+		#header h1, #header p#intro { float: none; width: auto; }
+		#intro a, #intro a:visited { background: none; font-weight: bold; color: #ccc; margin-left: 5px; text-decoration: underline;}
+		#intro a:hover { background: none; color: #fff; } 
+	
+	#example { margin-bottom: 10px; }
+	#example .grid-3 { float: left; width: 30% }
+	#example h3 { margin-bottom: 10px; }
+	#example .exampleInfo { margin-top: 10px; border-top: 1px #00ccde; padding-top: 10px; }
+	#example .tests { margin-left: 15px; }
+	
+	.showOnMobile { visibility: visible; }
+}

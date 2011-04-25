@@ -1,8 +1,8 @@
 holmes.css - CSS Markup Detective
 =================================
 
-Holmes is stand-alone diagnostic CSS stylesheet that will highlight
-potentially invalid or erroneous HTML(5) markup.
+Holmes is stand-alone diagnostic CSS stylesheet that can highlight
+potentially invalid or erroneous HTML(5) markup by adding one class.
 
 ### What does it cover?
 
@@ -17,7 +17,7 @@ Beyond these three labels you must use some sort of inspector, such as Firebug, 
 	
 ### Why should I use it?
 
-holmes.css is useful for checking the quality of your code (up to W3C HTML5 standards), nitpicking over ensuring markup is valid and semantic, and when you are task is to fix up
+holmes.css is useful for checking the quality of your code (up to W3C HTML5 standards), nitpicking over ensuring markup is valid and semantic, and when you are tasked to fix up
 and debug an old, OLD website. It has a simple implementation and a mostly unobtrusive effect on your page. Not recommended for live enviroments.
 
 Remember too that these are just guidelines: if something is flagged but you can't change it for a good reason, don't worry about it :) Also use a validator if you want to be 100% sure.
