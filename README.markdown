@@ -2,7 +2,7 @@ holmes.css - CSS Markup Detective
 =================================
 
 Holmes is stand-alone diagnostic CSS stylesheet that can highlight
-potentially invalid or erroneous HTML(5) markup by adding one class.
+potentially invalid, inaccassible or erroneous HTML(5) markup by adding one class.
 
 ### What does it cover?
 
