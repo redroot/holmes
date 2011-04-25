@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/**
+*	O
+*	 \ HOLMES
+*
+*	------------------------
+*
+*	Holmes is stand-alone diagnostic CSS stylesheet that will highlight
+*	potentially invalid or erroneous HTML(5) markup
+*
+*	@author 		Luke Williams
+*	@author_url		http://www.red-root.com
+*	@project_url	...ssad as
+*	@version		0.5 (25/04/2011)
+*
+*	@copyright 		Copyright Luke Williams 2011-
+*
+*	------------------------
+*
+*	How does it work?
+*
+*	Adding the class 'holmes-debug' to any element will set debug styles
+*	for any elements within that element. Normally it is recommended 
+*	you append this to the body tag or main content area e.g. 
+*	<body class="holmes-debug">
+*
+*	------------------------
+*
+*	Debug colours and what they mean
+*
+*	- RED 		denotes an error, invalid markup or a deprecated element (as of XHTML Strict and HTML5)
+*	- YELLOW 	denotes a warning, so potentionally erroneous markup or bad practice
+*
+*	-------------------------
+*
+*	Notes
+*
+*	- 	I have chosen to keep all separate types of diagnostis separate, despite sharing
+*		common CSS styles, to maintain readability
+*
+*/
+
+
+/**************
+	LINKS 
+**************/
+
+.holmes-debug a:not([href]),
+.holmes-debug a:not([title]),
+.holmes-debug a[title=""],
+.holmes-debug a[href=""] {
+	outline: 3px solid red;
+}
+
+.holmes-debug a[href="#"],
+.holmes-debug a[href^="javascript"]{
+	outline: 3px solid yellow;
+}
+
+/**************
+	IMAGES 
+**************/
+
+.holmes-debug img:not([alt]),
+.holmes-debug img[alt=""] {
+	outline: 3px solid red;
+}
+
+/*************************
+	MISC ATTRIBUTES
+**************************/
+
+.holmes-debug label:not([for]),
+.holmes-debug label[for=""],
+.holmes-debug input:not([name]),
+.holmes-debug input[name=""],
+.holmes-debug select:not([name]),
+.holmes-debug select[name=""],
+.holmes-debug textarea:not([name]),
+.holmes-debug textarea[name=""],
+.holmes-debug [class=""],
+.holmes-debug [id=""] {
+	outline: 3px solid red;
+}
+
+.holmes-debug table:not([summary]),
+.holmes-debug table[summary=""]{
+	border: 3px solid red;
+}
+
+/* 
+	Warnings here, for inline styles and event calls, 
+	ideally they should be external (CSS) and JS applied by JS scripts,
+	keep markup purely presentational!
+	(not sure about the js yet)
+*/
+.holmes-debug [style]/*,
+.holmes-debug [onclick],
+.holmes-debug [onblur],
+.holmes-debug [onfocus],
+.holmes-debug [onselect],
+.holmes-debug [onload],
+.holmes-debug [onunload]
+ */{ 
+	outline: 3px solid yellow;
+ }
+ 
+/*************************
+	DEPRECATED ELEMENTS
+**************************/
+
+.holmes-debug applet, 
+.holmes-debug basefont, 
+.holmes-debug center, 
+.holmes-debug dir, 
+.holmes-debug font, 
+.holmes-debug isindex, 
+.holmes-debug menu, 
+.holmes-debug s, 
+.holmes-debug strike, 
+.holmes-debug u, 
+.holmes-debug i, 
+.holmes-debug b, 
+.holmes-debug listing, 
+.holmes-debug plaintext, 
+.holmes-debug xmp {
+	outline: 3px solid red;
+}
+
+/*************************
+	NON-W3C ATTRIBUTES
+**************************/
+
+body.holmes-debug[bgproperties], 
+body.holmes-debug[topmargin], 
+body.holmes-debug[rightmargin], 
+body.holmes-debug[bottommargin], 
+body.holmes-debug[leftmargin] {
+	outline: 3px solid red;
+}
+
+.holmes-debug *[bordercolor], 
+.holmes-debug *[bordercolordark], 
+.holmes-debug *[bordercolorlight],
+.holmes-debug table[frame] {
+	outline: 3px solid red;
+}
+
+/*********************
+	EMPTY ELEMENTS (warning level for now)
+**********************/
+
+.holmes-debug div:empty, 
+.holmes-debug span:empty,
+.holmes-debug li:empty, 
+.holmes-debug p:empty,
+.holmes-debug td:empty, 
+.holmes-debug th:empty {
+	outline: 3px solid yellow;
+}

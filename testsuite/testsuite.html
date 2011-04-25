@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+	<head> 
+	 
+		<title>holmes.css - Test Suite (v 1.0)</title>
+		<link rel="stylesheet" href="../holmes.css" media="screen,projection,print,handheld" type="text/css" />
+		<link rel="stylesheet" href="testsuite.css" media="screen,projection,print,handheld" type="text/css" />
+
+	</head>
+	<body class="holmes-debug">
+		<div id="content">
+			<div id="header">
+				<h1>holmes.css - Test Suite (v 1.0)</h1>
+			</div>
+			<div id="tests">
+				<div class="test">
+					<h2>Links</h2>
+					<ul>
+						<li>
+							<p>Normal Link</p>
+							<a href="http://www.red-root.com" title="A link to red-root.com">red<strong>root</strong></a>
+						</li>
+						<li>
+							<p>Link with no title</p>
+							<a href="http://www.red-root.com" >red<strong>root</strong></a>
+						</li>
+						<li>
+							<p>Link with an empty title</p>
+							<a href="http://www.red-root.com" title="">red<strong>root</strong></a>
+						</li>
+						<li>
+							<p>Link with no href</p>
+							<a  title="A link to red-root.com">red<strong>root</strong></a>
+						</li>
+						<li>
+							<p>Link with an empty href</p>
+							<a href="" title="A link to red-root.com">red<strong>root</strong></a>
+						</li>
+						<li>
+							<p>Link with the href '#'</p>
+							<a href="#" title="A link to red-root.com">red<strong>root</strong></a>
+						</li>
+						<li>
+							<p>Link with href with 'javascript'</p>
+							<a href="javascript:doSomething();" title="A link to red-root.com">red<strong>root</strong></a>
+						</li>
+					</ul>
+				</div>
+				<div class="test">
+					<h2>Images</h2>
+					<ul>
+						<li>
+							<p>Normal Image</p>
+							<img src="http://dummyimage.com/200x100/000/fff.jpg" alt="Alternative Text" />
+						</li>
+						<li>
+							<p>Image with no alt</p>
+							<img src="http://dummyimage.com/200x100/000/fff.jpg" />
+						</li>
+						<li>
+							<p>Image with an emtpy alt</p>
+							<img src="http://dummyimage.com/200x100/000/fff.jpg" alt="" />
+						</li>
+					</ul>
+				</div>
+				<div class="test">
+					<h2>Misc Attributes</h2>
+					<ul>
+						<li>
+							<p>Normal Table</p>
+							<table summary="a summary on this table">
+								<thead>
+									<th>Name</th>
+									<th>Value</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>I'm a table</td>
+										<td> 3</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<p>Table with no summary</p>
+							<table>
+								<thead>
+									<th>Name</th>
+									<th>Value</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>I'm a table</td>
+										<td> 3</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<p>Table with an empty summary</p>
+							<table summary="">
+								<thead>
+									<th>Name</th>
+									<th>Value</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>I'm a table</td>
+										<td> 3</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<p>Normal Label</p>
+							<label for="anInput">Label for an input</label>
+						</li>
+						<li>
+							<p>Label with no for</p>
+							<label>Label for an input</label>
+						</li>
+						<li>
+							<p>Label with an empty for</p>
+							<label for="">Label for an input</label>
+						</li>
+						<li>
+							<p>Normal Input</p>
+							<input type="text" name="anInput" />
+						</li>
+						<li>
+							<p>Input with no name</p>
+							<input type="text" />
+						</li>
+						<li>
+							<p>Input with empty name</p>
+							<input type="text" name="" />
+						</li>
+						<li>
+							<p>Normal Select</p>
+							<select name="aSelect">
+								<option value="value1">Value 1</option>
+								<option value="value2">Value 2</option>
+							</select>
+						</li>
+						<li>
+							<p>Select with no name</p>
+							<select>
+								<option value="value1">Value 1</option>
+								<option value="value2">Value 2</option>
+							</select>
+						</li>
+						<li>
+							<p>Select with empty name</p>
+							<select name="">
+								<option value="value1">Value 1</option>
+								<option value="value2">Value 2</option>
+							</select>
+						</li>
+						<li>
+							<p>Normal Textarea</p>
+							<textarea name="aTextArea">...</textarea>
+						</li>
+						<li>
+							<p>Textarea with no name</p>
+							<textarea>...</textarea>
+						</li>
+						<li>
+							<p>Textarea with empty name</p>
+							<textarea name="">...</textarea>
+						</li>
+						<li>
+							<p>Element with empty class attr</p>
+							<span class="">This element lacks implied class!</span>
+						</li>
+						<li>
+							<p>Element with empty id attr</p>
+							<span id="">This element lacks any id!</span>
+						</li>
+						<li>
+							<p>Element with inline style attribute</p>
+							<div style="background-color: #000; color: #fff;">Inline Styles!</div>
+						</li>
+					</ul>
+				</div>
+				<div class="test">
+					<h2>Deprecated Elements</h2>
+				</div>
+				<div class="test">
+					<h2>Non-W3C Attributes</h2>
+				</div>
+				<div class="test">
+					<h2>Empty Elements (warning)</h2>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
