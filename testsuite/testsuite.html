@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="testsuite.css" media="screen,projection,print,handheld" type="text/css" />
 
 	</head>
-	<body class="holmes-debug">
+	<body class="holmes-debug" rightmargin="0" leftmargin="0" topmargin="0" bottommargin="0" bgproperties="">
 		<div id="content">
 			<div id="header">
 				<h1>holmes.css - Test Suite (v 1.0)</h1>
@@ -170,6 +170,18 @@
 							<textarea name="">...</textarea>
 						</li>
 						<li>
+							<p>Normal Abbr</p>
+							<span><abbr title="Cascading Style Sheets">CSS</abbr>3</span>
+						</li>
+						<li>
+							<p>Abbr with no title</p>
+							<span><abbr>CSS</abbr>3 </span>
+						</li>
+						<li>
+							<p>Abbr with empty title</p>
+							<span><abbr title="">CSS</abbr>3</span>
+						</li>
+						<li>
 							<p>Element with empty class attr</p>
 							<span class="">This element lacks implied class!</span>
 						</li>
@@ -185,12 +197,135 @@
 				</div>
 				<div class="test">
 					<h2>Deprecated Elements</h2>
+					<ul>
+						<li>
+							<p>applet Element</p>
+							<applet code="" width="200" height="100">
+							Java applet that draws animated bubbles.
+							</applet>
+						</li>
+						<li>
+							<p>acronym Element</p>
+							<acronym title="Cascading Style Stylesheets">CSS</acronym>3
+						</li>
+						<li>
+							<p>center Element</p>
+							<span><center>Centred Text</center></span>
+						</li>
+						<li>
+							<p>dir Element</p>
+							<dir>
+							  <li>html</li>
+							  <li>xhtml</li>
+							  <li>css</li>
+							</dir>
+						</li>
+						<li>
+							<p>font Element</p>
+							<span><font face="verdana" color="green">This is some text!</font></span>
+						</li>
+						<li>
+							<p>strike Element</p>
+							<strike>Strike me down</strike>
+						</li>
+						<li>
+							<p>u Element</p>
+							<u>Underline Me</u>
+						</li>
+						<li>
+							<p>big Element</p>
+							<big>BIG FONT</big>
+						</li>
+						<li>
+							<p>tt Element</p>
+							<tt>Not sure what this does</tt>
+						</li>
+						<li>
+							<p>marquee Element</p>
+							<marquee> Text message and/or images here. </marquee>
+						</li>
+						<li>
+							<p>plaintext Element</p>
+							<!-- removed as it BUTCHERS the rest of the document <plaintext>what? -->removed (see source)
+						</li>
+						<li>
+							<p>xmp Element</p>
+							<xmp>
+Stock ID    Description             
+--------    -----------            
+116         Inflatable Armchair    
+119         Walkie Talkie           
+							</xmp>
+						</li>
+					</ul>
 				</div>
 				<div class="test">
-					<h2>Non-W3C Attributes</h2>
+					<h2>Deprecated &amp; Non-W3C Attributes</h2>
+					<ul>
+						<li>
+							<p>Table with a frame attr</p>
+							<table summary="A summary" frame="">
+								<thead>
+									<th>Name</th>
+									<th>Value</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>I'm a table</td>
+										<td>3</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<p>divs using bordercolor</p>
+							<div bordercolor="blue">No inline bordercolors please</div>
+						</li>
+						<li>
+							<p>divs using bordercolorlight and dark</p>
+							<div bordercolordark="blue" bordercolorlight="blue">No inline bordercolors please</div>
+						</li>
+						
+					</ul>
 				</div>
 				<div class="test">
 					<h2>Empty Elements (warning)</h2>
+					<ul>
+						<li>
+							<p>Empty div</p>
+							<div></div>
+						</li>
+						<li>
+							<p>Empty p</p>
+							<p></p>
+						</li>
+						<li>
+							<p>Empty li</p>
+							<ul>
+								<li>Some text</li>
+								<li></li>
+							</ul>
+						</li>
+						<li>
+							<p>Empty span</p>
+							<span></span>
+						</li>
+						<li>
+							<p>Empty th and td</p>
+							<table summary="">
+								<thead>
+									<th>Name</th>
+									<th></th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>I'm a table</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>

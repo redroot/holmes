@@ -10,8 +10,8 @@
 *
 *	@author 		Luke Williams
 *	@author_url		http://www.red-root.com
-*	@project_url	...ssad as
-*	@version		0.5 (25/04/2011)
+*	@project_url	http://github.com/redroot/holmes/
+*	@version		1.0 (25/04/2011)
 *
 *	@copyright 		Copyright Luke Williams 2011-
 *
@@ -19,17 +19,19 @@
 *
 *	How does it work?
 *
-*	Adding the class 'holmes-debug' to any element will set debug styles
-*	for any elements within that element. Normally it is recommended 
-*	you append this to the body tag or main content area e.g. 
+*	Adding the class 'holmes-debug' to any element, ideally the body or html tag,
+*	will set debug styles for any elements within that element. 
+*
+*	e.g.: 
 *	<body class="holmes-debug">
 *
 *	------------------------
 *
 *	Debug colours and what they mean
 *
-*	- RED 		denotes an error, invalid markup or a deprecated element (as of XHTML Strict and HTML5)
-*	- YELLOW 	denotes a warning, so potentionally erroneous markup or bad practice
+*	- RED 			denotes an error, invalid markup or a missing attribute
+*	- YELLOW 		denotes a warning, so potentionally erroneous markup or bad practice
+*	- DARK GREY		denotes a deprecated element or element with deprecated or Non-W3C attributes
 *
 *	-------------------------
 *
@@ -78,6 +80,10 @@
 .holmes-debug select[name=""],
 .holmes-debug textarea:not([name]),
 .holmes-debug textarea[name=""],
+
+.holmes-debug abbr:not([title]),
+.holmes-debug abbr[title=""],
+
 .holmes-debug [class=""],
 .holmes-debug [id=""] {
 	outline: 3px solid red;
@@ -105,45 +111,46 @@
 	outline: 3px solid yellow;
  }
  
-/*************************
-	DEPRECATED ELEMENTS
-**************************/
+/*************************************************************************
+	DEPRECATED & NON-W3C CONTENT ELEMENTS (darkgrey)
+	Based largely on http://www.w3.org/TR/html5/obsolete.html#obsolete
+*************************************************************************/
 
 .holmes-debug applet, 
-.holmes-debug basefont, 
+.holmes-debug acronym, 
 .holmes-debug center, 
 .holmes-debug dir, 
-.holmes-debug font, 
-.holmes-debug isindex, 
-.holmes-debug menu, 
-.holmes-debug s, 
+.holmes-debug font,   
 .holmes-debug strike, 
 .holmes-debug u, 
-.holmes-debug i, 
-.holmes-debug b, 
-.holmes-debug listing, 
-.holmes-debug plaintext, 
+/*.holmes-debug i, apparently not deprecated  
+.holmes-debug b,  apparently not deprecated  */
+.holmes-debug big,
+.holmes-debug tt,
+.holmes-debug marquee, /* i've left this is because its naff bascially */
+.holmes-debug plaintext,  
 .holmes-debug xmp {
-	outline: 3px solid red;
+	border: 3px solid darkgrey;
 }
 
-/*************************
-	NON-W3C ATTRIBUTES
-**************************/
+/************************************************************************
+	DEPRECATED NON-W3C ATTRIBUTES (darkgrey)
+	Based largely on http://www.w3.org/TR/html5/obsolete.html#obsolete
+************************************************************************/
 
 body.holmes-debug[bgproperties], 
 body.holmes-debug[topmargin], 
 body.holmes-debug[rightmargin], 
 body.holmes-debug[bottommargin], 
 body.holmes-debug[leftmargin] {
-	outline: 3px solid red;
+	outline: 3px solid darkgrey;
 }
 
 .holmes-debug *[bordercolor], 
 .holmes-debug *[bordercolordark], 
 .holmes-debug *[bordercolorlight],
 .holmes-debug table[frame] {
-	outline: 3px solid red;
+	border: 3px solid darkgrey;
 }
 
 /*********************
@@ -156,5 +163,5 @@ body.holmes-debug[leftmargin] {
 .holmes-debug p:empty,
 .holmes-debug td:empty, 
 .holmes-debug th:empty {
-	outline: 3px solid yellow;
+	border: 3px solid yellow;
 }

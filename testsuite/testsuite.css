@@ -4,32 +4,32 @@
 	@version 1.0 (24.04.2011)
 */
 
-body {font-size: 100%;font-family: Arial, Helvetica, sans-serif;text-align:center; background-color: #d8e8e8;}
+body {font-size: 100%;font-family: Arial, Helvetica, sans-serif;text-align:center; background-color: #e6e2af;}
 
 /*
 	Layout
 */
-#content {width: 940px; text-align: left; margin: 0 auto; background-color: #e6efff;}
-	#header { background-color: #33a5ff; }
+#content {width: 940px; text-align: left; margin: 0 auto; background-color: #e8e7dd;}
+	#header { background-color: #a7a37e; }
 	
 	#tests { color: #334; padding: 0px 10px 10px 10px; }
 /*
 	Tests
 */
-.test { padding: 10px 10px 20px 10px; clear: both; overflow: auto; background-color: #f4f4f4; border-bottom: 5px solid #969faf;  margin-botton: 10px;}
+.test { padding: 10px 10px 20px 10px; clear: both; overflow: auto; background-color: #f4f4f4; border-bottom: 5px solid #a7a37e;  margin-botton: 10px;}
 .test:nth-child(odd) { background-color: #fff; }
-	.test p { font-style: italic; font-size: 90%; }
+	.test p { font-style: italic; color: #468996; font-size: 90%; font-weight: bold}
 
 /*
 	Content
 */
 h1,h2 { margin-bottom: 20px; padding: 10px; }
-h1 { font-size: 28px; color: #001133;}
-h2 { font-size: 20px; color: #002255; } 
+h1 { font-size: 28px; color: #002f2f;}
+h2 { font-size: 20px; color: #065858; } 
 
 p { line-height: 22px; }
 ul { margin: 0px; padding: 0px; }
-ul li { list-style: none; float: left; margin: 0px 0px 10px 20px; width: 31%; }
+.test ul li { list-style: none; float: left; margin: 0px 0px 10px 20px; width: 27%; border: 1px solid #e4e4e4; padding: 10px; }
 a, a:visited { color: #889; }
 a:hover { color: #000; }
 
@@ -46,5 +46,5 @@ table { border: 1px solid #333; }
 	h2 { font-size: 130%; }
 	
 	.test { padding: 5px 5px 10px 5px; }
-	ul li { float: none; border-bottom: 1px solid #ccc; width: 100%; padding-bottom: 10px; margin: 0px 0px 10px 5px; }
+	.test ul li { float: none; border-bottom: 1px solid #ccc; width: 90%; padding-bottom: 10px; margin: 0px 0px 10px 5px; }
 }
