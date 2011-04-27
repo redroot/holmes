@@ -13,7 +13,7 @@ for flags such as:
 +	__Deprecated and Non-W3C Elements__ - see [http://www.w3.org/TR/html5/obsolete.html#obsolete] (W3C.org's article on obselete tags)
 +	__Non-W3C Attributes__ - as above, just the most important ones since there are MANY
 	
-Beyond these three labels you must use some sort of inspector, such as Firebug, to determine the reason that an element has been flagged.
+Hovering over most elements will cause a description to be displayed in the top left, or top right corner of the screen.
 	
 ### Why should I use it?
 
