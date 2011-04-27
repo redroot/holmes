@@ -11,7 +11,7 @@
 *	@author 		Luke Williams
 *	@author_url		http://www.red-root.com
 *	@project_url	http://github.com/redroot/holmes/
-*	@version		1.0 (25/04/2011)
+*	@version		1.0.1 (25/04/2011)
 *
 *	@copyright 		Copyright Luke Williams 2011-
 *
@@ -48,14 +48,14 @@
 **************/
 
 .holmes-debug a:not([href]),
-.holmes-debug a:not([title]),
-.holmes-debug a[title=""],
 .holmes-debug a[href=""] {
 	outline: 3px solid red;
 }
 
 .holmes-debug a[href="#"],
-.holmes-debug a[href^="javascript"]{
+.holmes-debug a[href^="javascript"],
+.holmes-debug a:not([title]),
+.holmes-debug a[title=""]{
 	outline: 3px solid #fd0;
 }
 

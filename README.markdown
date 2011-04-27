@@ -48,4 +48,5 @@ Inspired by [http://csswizardry.com/inuitcss/](InuitCSS),[http://meyerweb.com/er
 Changelog 
 ---------
 
++ 27.04.11 - Changed the no title/empty title on anchor links to a warning level instead of a error level
 + 25.04.11 - Removed test for plaintext, even though it's still in the CSS file, since it BUTCHERED the rest of the testsuite page.
