@@ -125,7 +125,7 @@
  }
 
 /*************************************************************************
-	DEPRECATED & NON-W3C CONTENT ELEMENTS (darkgrey)
+	DEPRECATED & NON-W3C CONTENT ELEMENTS (#a9a9a9)
 	Based largely on http://www.w3.org/TR/html5/obsolete.html#obsolete
 *************************************************************************/
 
@@ -141,7 +141,7 @@
 .holmes-debug marquee, /* i've left this is because its naff bascially */
 .holmes-debug plaintext,  
 .holmes-debug xmp {
-	border: 2px solid darkgrey;
+	border: 2px solid #a9a9a9;
 }
 
 body.holmes-debug[bgproperties], 
@@ -149,7 +149,7 @@ body.holmes-debug[topmargin],
 body.holmes-debug[rightmargin], 
 body.holmes-debug[bottommargin], 
 body.holmes-debug[leftmargin] {
-	outline: 2px solid darkgrey;
+	outline: 2px solid #a9a9a9;
 }
 
 
@@ -157,7 +157,7 @@ body.holmes-debug[leftmargin] {
 .holmes-debug *[bordercolordark], 
 .holmes-debug *[bordercolorlight],
 .holmes-debug table[frame] {
-	border: 2px solid darkgrey;
+	border: 2px solid #a9a9a9;
 }
 
 
@@ -275,7 +275,6 @@ body.holmes-debug[leftmargin] {
 .holmes-debug marquee:hover::after,
 .holmes-debug plaintext:hover::after,  
 .holmes-debug xmp:hover::after,
-
 .holmes-debug *[bordercolor]:hover::after, 
 .holmes-debug *[bordercolordark]:hover::after, 
 .holmes-debug *[bordercolorlight]:hover::after,
@@ -287,7 +286,7 @@ body.holmes-debug[leftmargin] {
 	margin: 1em;
 	background: red;
 	position: fixed;
-	background: darkgrey;
+	background: #a9a9a9;
 	color: #000;
 	left: 0px;
 	top: 0px;
@@ -309,7 +308,7 @@ body.holmes-debug[leftmargin]:hover::after {
 	margin: 1em;
 	background: red;
 	position: fixed;
-	background: darkgrey;
+	background: #a9a9a9;
 	color: #000;
 	bottom: 0px;
 	right: 0px;
@@ -402,7 +401,7 @@ body.holmes-debug[leftmargin]:hover::after {
 }
 
 /*************************************************************************
-	DEPRECATED & NON-W3C CONTENT ELEMENTS (darkgrey)
+	DEPRECATED & NON-W3C CONTENT ELEMENTS (#a9a9a9)
 	Based largely on http://www.w3.org/TR/html5/obsolete.html#obsolete
 *************************************************************************/
 
@@ -424,7 +423,7 @@ body.holmes-debug[leftmargin]:hover::after {
 }
 
 /************************************************************************
-	DEPRECATED NON-W3C ATTRIBUTES (darkgrey)
+	DEPRECATED NON-W3C ATTRIBUTES (#a9a9a9)
 	Based largely on http://www.w3.org/TR/html5/obsolete.html#obsolete
 ************************************************************************/
 

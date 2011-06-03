@@ -50,6 +50,7 @@ Thanks for [http://www.twitter.com/MrNibbles](@MrNibbles) for the debug message 
 Changelog 
 ---------
 
++ 03.06.11 - Changes references of 'darkgrey' to a hex code to attempt to ensure the stylesheet is valid css3 (still 4 errors)
 + 27.04.11 - thanks to [http://www.twitter.com/MrNibbles](@MrNibbles), there is now a message on hover on any flagged elements. No support for ::after on images though :/
 + 27.04.11 - Changed the no title/empty title on anchor links to a warning level instead of a error level
 + 25.04.11 - Removed test for plaintext, even though it's still in the CSS file, since it BUTCHERED the rest of the testsuite page.
