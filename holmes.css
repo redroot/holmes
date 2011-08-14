@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
 *	O
 *	 \ HOLMES
@@ -12,7 +11,7 @@
 *	@contributors	Anthony Mann (hover based debug info)
 *	@author_url		http://www.red-root.com
 *	@project_url	http://github.com/redroot/holmes/
-*	@version		1.0.1 (25/04/2011)
+*	@version		1.0.4 (14/08/2011)
 *
 *	Copyright (C) 2011 Luke Williams & RedRoot All Rights Reserved.
 * 	holmes.css HTML5 CSS Accessibility Validation
@@ -268,8 +267,7 @@ body.holmes-debug[leftmargin] {
 .holmes-debug center:hover::after, 
 .holmes-debug dir:hover::after, 
 .holmes-debug font:hover::after,   
-.holmes-debug strike:hover::after, 
-.holmes-debug u:hover::after, 
+.holmes-debug strike:hover::after,  
 .holmes-debug big:hover::after,
 .holmes-debug tt:hover::after,
 .holmes-debug marquee:hover::after,
@@ -411,9 +409,6 @@ body.holmes-debug[leftmargin]:hover::after {
 .holmes-debug dir:hover::after, 
 .holmes-debug font:hover::after,   
 .holmes-debug strike:hover::after, 
-.holmes-debug u:hover::after, 
-/*.holmes-debug i, apparently not deprecated  
-.holmes-debug b,  apparently not deprecated  */
 .holmes-debug big:hover::after,
 .holmes-debug tt:hover::after,
 .holmes-debug marquee:hover::after, /* i've left this is because its naff bascially */
