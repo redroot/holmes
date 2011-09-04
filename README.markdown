@@ -41,6 +41,11 @@ Works 100% in
 Due to extensive use of the __:not__ CSS3 selector, holmes.css does not function well in IE 8 and below,
 but it should (NB: not tested yet) work in Internet Explorer 9. Oh well.
 
+### License
+
+Licenced under GPL license
+http://www.gnu.org/licenses/gpl.html
+
 ### Acknowledgments
 
 Inspired by [http://csswizardry.com/inuitcss/](InuitCSS),[http://meyerweb.com/eric/tools/css/diagnostics/](Eric Meyer), [http://www.nealgrosskopf.com/tech/thread.php?pid=17](Neal Grosskopf) and procrastination from coursework! 
