@@ -142,6 +142,7 @@
 	border: 2px solid #a9a9a9;
 }
 
+body.holmes-debug[background], 
 body.holmes-debug[bgproperties], 
 body.holmes-debug[topmargin], 
 body.holmes-debug[rightmargin], 
@@ -158,6 +159,13 @@ body.holmes-debug[leftmargin] {
 	border: 2px solid #a9a9a9;
 }
 
+.holmes-debug *[align], 
+.holmes-debug *[valign], 
+.holmes-debug *[bgcolor], 
+.holmes-debug *[clear], 
+.holmes-debug ul[type], .holmes-debug li[type] {
+	border: 2px solid #a9a9a9;
+}
 
 /*********************
 	EMPTY ELEMENTS (warning level for now)
@@ -276,7 +284,13 @@ body.holmes-debug[leftmargin] {
 .holmes-debug *[bordercolordark]:hover::after, 
 .holmes-debug *[bordercolorlight]:hover::after,
 
-.holmes-debug table[frame]:hover::after {
+.holmes-debug table[frame]:hover::after,
+.holmes-debug *[align]:hover::after, 
+.holmes-debug *[valign]:hover::after, 
+.holmes-debug *[bgcolor]:hover::after, 
+.holmes-debug *[clear]:hover::after, 
+.holmes-debug ul[type]:hover::after,
+.holmes-debug li[type]:hover::after {
 	border-radius: 0.5em;
 	display:block;
 	padding: 1em;
@@ -294,6 +308,7 @@ body.holmes-debug[leftmargin] {
 /* = Deprecated body style Styles = */
 /* ================================ */
 
+body.holmes-debug[background]:hover::after, 
 body.holmes-debug[bgproperties]:hover::after, 
 body.holmes-debug[topmargin]:hover::after, 
 body.holmes-debug[rightmargin]:hover::after, 
@@ -384,6 +399,7 @@ body.holmes-debug[leftmargin]:hover::after {
 .holmes-debug [class=""]:hover::after {
 	content:'Blank class attribute';
 }
+
 .holmes-debug [id=""]:hover::after {
 	content:'Blank id attribute';
 }
@@ -421,6 +437,9 @@ body.holmes-debug[leftmargin]:hover::after {
 	Based largely on http://www.w3.org/TR/html5/obsolete.html#obsolete
 ************************************************************************/
 
+body.holmes-debug[background]:hover::after {
+	content:'Deprecated or Non-W3C body attribute background';
+}
 
 body.holmes-debug[bgproperties]:hover::after {
 	content:'Deprecated or Non-W3C body attribute bgproperties';
@@ -435,9 +454,30 @@ body.holmes-debug[leftmargin]:hover::after {
 
 .holmes-debug *[bordercolor]:hover::after, 
 .holmes-debug *[bordercolordark]:hover::after, 
-.holmes-debug *[bordercolorlight]:hover::after,
+.holmes-debug *[bordercolorlight]:hover::after {
+	content:'Deprecated or Non-W3C attribute bordercolor';
+}
+
 .holmes-debug table[frame]:hover::after {
-	content:'Deprecated or Non-W3C body attribute bordercolor';
+	content:'Deprecated or Non-W3C table attribute frame';
+}
+
+.holmes-debug *[align]:hover::after,
+.holmes-debug *[valign]:hover::after {
+	content:'Deprecated or Non-W3C attribute *align';
+}
+
+.holmes-debug *[bgcolor]:hover::after {
+	content:'Deprecated or Non-W3C attribute bgcolor';
+}
+
+.holmes-debug *[clear]:hover::after {
+	content:'Deprecated or Non-W3C attribute clear';
+}
+
+.holmes-debug ul[type]:hover::after, 
+.holmes-debug li[type]:hover::after {
+	content:'Deprecated or Non-W3C list attribute type';
 }
 
 /*********************
