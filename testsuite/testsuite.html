@@ -59,7 +59,7 @@
 							<img src="http://dummyimage.com/200x100/000/fff.jpg" />
 						</li>
 						<li>
-							<p>Image with an emtpy alt</p>
+							<p>Image with an empty alt</p>
 							<img src="http://dummyimage.com/200x100/000/fff.jpg" alt="" />
 						</li>
 					</ul>
@@ -210,7 +210,7 @@
 						</li>
 						<li>
 							<p>center Element</p>
-							<span><center>Centred Text</center></span>
+							<span><center>Centered Text</center></span>
 						</li>
 						<li>
 							<p>dir Element</p>
@@ -227,10 +227,6 @@
 						<li>
 							<p>strike Element</p>
 							<strike>Strike me down</strike>
-						</li>
-						<li>
-							<p>u Element</p>
-							<u>Underline Me</u>
 						</li>
 						<li>
 							<p>big Element</p>
@@ -285,7 +281,40 @@ Stock ID    Description
 							<p>divs using bordercolorlight and dark</p>
 							<div bordercolordark="blue" bordercolorlight="blue">No inline bordercolors please</div>
 						</li>
-						
+						<li>
+							<p>Paragraph with an align attr</p>
+							<p align="center">Text centering should be done in CSS</p>
+						</li>
+						<li>
+							<p>Table containing tds with valign attr</p>
+							<table summary="A summary">
+								<tbody>
+									<tr>
+										<th>Deliberately long text goes here</th>
+										<td valign="top">Top</td>
+									</tr>
+									<tr>
+										<th>This text is also quite long</th>
+										<td valign="bottom">Bottom</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li>
+							<p>Table with cells using the bgcolor attr</p>
+							<table summary="A summary" frame="">
+								<thead>
+									<th bgcolor="red">Name</th>
+									<th bgcolor="yellow">Value</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td bgcolor="blue">I'm a table</td>
+										<td bgcolor="green">3</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
 					</ul>
 				</div>
 				<div class="test">
