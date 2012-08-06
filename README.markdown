@@ -55,6 +55,7 @@ Thanks for [http://www.twitter.com/MrNibbles](@MrNibbles) for the debug message 
 Changelog 
 ---------
 
++ 06.08.12 - Removed error for missing title attributes, and downgraded empty alt to warning
 + 14.08.11 - Removed check for u tag since this is now valid in HTML5
 + 03.06.11 - Changes references of 'darkgrey' to a hex code to attempt to ensure the stylesheet is valid css3 (still 4 errors)
 + 27.04.11 - thanks to [http://www.twitter.com/MrNibbles](@MrNibbles), there is now a message on hover on any flagged elements. No support for ::after on images though :/
