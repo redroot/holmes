@@ -10,7 +10,7 @@ The holmes.css file will display either an error (red outline), a warning (yello
 for flags such as:
 
 +	__Missing required attributes on tags__, such as alt tags on images (lots of these)
-+	__Deprecated and Non-W3C Elements__ - see [http://www.w3.org/TR/html5/obsolete.html#obsolete] (W3C.org's article on obselete tags)
++	__Deprecated and Non-W3C Elements__ - see [W3C.org's article on obsolete tags] (http://www.w3.org/TR/html5/obsolete.html#obsolete)
 +	__Non-W3C Attributes__ - as above, just the most important ones since there are MANY
 
 Hovering over most elements will cause a description to be displayed in the top left, or top right corner of the screen.
