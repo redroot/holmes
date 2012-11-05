@@ -25,7 +25,7 @@ Remember too that these are just guidelines: if something is flagged but you can
 ### How do I use it?
 
 Simply download a version of the CSS, minified or normal (with docs), and include a stylesheet link to it on your 
-page. Or copy the contents into one of your own stylesheets. Then add the class "__holmes-debug__" to either your BODY or HTML tag, and you're set to go.
+page. Or copy the contents into one of your own stylesheets. Then add the class `holmes-debug` to either your BODY or HTML tag, and you're set to go.
 
 In terms of configuration, such as changing the flag colours: go nuts!
 
