@@ -139,6 +139,7 @@
 .holmes-debug big,
 .holmes-debug tt,
 .holmes-debug marquee, /* i've left this is because its naff bascially */
+.holmes-debug hgroup,
 .holmes-debug plaintext,  
 .holmes-debug xmp {
 	border: 2px solid #a9a9a9;
@@ -279,6 +280,7 @@ body.holmes-debug[leftmargin] {
 .holmes-debug big:hover::after,
 .holmes-debug tt:hover::after,
 .holmes-debug marquee:hover::after,
+.holmes-debug hgroup:hover::after,
 .holmes-debug plaintext:hover::after,  
 .holmes-debug xmp:hover::after,
 .holmes-debug *[bordercolor]:hover::after, 
@@ -429,6 +431,7 @@ body.holmes-debug[leftmargin]:hover::after {
 .holmes-debug big:hover::after,
 .holmes-debug tt:hover::after,
 .holmes-debug marquee:hover::after, /* i've left this is because its naff bascially */
+.holmes-debug hgroup:hover::after,
 .holmes-debug plaintext:hover::after,  
 .holmes-debug xmp:hover::after {
 	content:'Deprecated or Non-W3C element';
