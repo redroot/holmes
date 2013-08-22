@@ -447,7 +447,7 @@ body.holmes-debug[leftmargin]:hover::after {
 }
 
 .holmes-debug table[summary]:hover::after {
-	content:'Deprecated or Non-W3C table attribute frame';
+	content:'Deprecated or Non-W3C table attribute summary';
 }
 
 .holmes-debug *[align]:hover::after,
