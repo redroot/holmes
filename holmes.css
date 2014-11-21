@@ -11,7 +11,7 @@
 *	@contributors	Anthony Mann (hover based debug info)
 *	@author_url		http://www.red-root.com
 *	@project_url	http://github.com/redroot/holmes/
-*	@version		1.0.45(06/08/2012)
+*	@version		1.0.45 (06/08/2012)
 *
 *	Copyright (C) 2012 Luke Williams & RedRoot All Rights Reserved.
 * 	holmes.css HTML5 CSS Accessibility Validation
@@ -23,9 +23,9 @@
 *	How does it work?
 *
 *	Adding the class 'holmes-debug' to any element, ideally the body or html tag,
-*	will set debug styles for any elements within that element. 
+*	will set debug styles for any elements within that element.
 *
-*	e.g.: 
+*	e.g.:
 *	<body class="holmes-debug">
 *
 *	------------------------
@@ -53,7 +53,7 @@
 
 
 /**************
-	LINKS 
+	LINKS
 **************/
 
 /* Errors */
@@ -72,7 +72,7 @@
 
 
 /**************
-	IMAGES 
+	IMAGES
 **************/
 
 .holmes-debug img:not([alt]){
@@ -104,8 +104,8 @@
 .holmes-debug [class=""],
 .holmes-debug [id=""],
 
-/* 
-	Warnings here, for inline styles and event calls, 
+/*
+	Warnings here, for inline styles and event calls,
 	ideally they should be external (CSS) and JS applied by JS scripts,
 	keep markup purely presentational!
 	(not sure about the js yet)
@@ -117,7 +117,7 @@
 .holmes-debug [onselect],
 .holmes-debug [onload],
 .holmes-debug [onunload]
- */{ 
+ */{
 	outline: 2px solid #fd0;
  }
 
@@ -126,61 +126,61 @@
 	Based largely on http://www.w3.org/TR/html5/obsolete.html#obsolete
 *************************************************************************/
 
-.holmes-debug applet, 
-.holmes-debug acronym, 
-.holmes-debug center, 
-.holmes-debug dir, 
-.holmes-debug font,   
-.holmes-debug strike, 
+.holmes-debug applet,
+.holmes-debug acronym,
+.holmes-debug center,
+.holmes-debug dir,
+.holmes-debug font,
+.holmes-debug strike,
 .holmes-debug big,
 .holmes-debug tt,
 .holmes-debug marquee, /* i've left this is because its naff bascially */
 .holmes-debug hgroup,
-.holmes-debug plaintext,  
+.holmes-debug plaintext,
 .holmes-debug xmp {
-	border: 2px solid #a9a9a9;
+	outline: 2px solid #a9a9a9;
 }
 
-body.holmes-debug[background], 
-body.holmes-debug[bgproperties], 
-body.holmes-debug[topmargin], 
-body.holmes-debug[rightmargin], 
-body.holmes-debug[bottommargin], 
+body.holmes-debug[background],
+body.holmes-debug[bgproperties],
+body.holmes-debug[topmargin],
+body.holmes-debug[rightmargin],
+body.holmes-debug[bottommargin],
 body.holmes-debug[leftmargin] {
 	outline: 2px solid #a9a9a9;
 }
 
 
-.holmes-debug *[bordercolor], 
-.holmes-debug *[bordercolordark], 
+.holmes-debug *[bordercolor],
+.holmes-debug *[bordercolordark],
 .holmes-debug *[bordercolorlight],
 .holmes-debug table[frame],
 .holmes-debug table[summary] {
-	border: 2px solid #a9a9a9;
+	outline: 2px solid #a9a9a9;
 }
 
-.holmes-debug *[align], 
-.holmes-debug *[valign], 
-.holmes-debug *[bgcolor], 
-.holmes-debug *[clear], 
+.holmes-debug *[align],
+.holmes-debug *[valign],
+.holmes-debug *[bgcolor],
+.holmes-debug *[clear],
 .holmes-debug ul[type], .holmes-debug li[type] {
-	border: 2px solid #a9a9a9;
+	outline: 2px solid #a9a9a9;
 }
 
 /*********************
 	EMPTY ELEMENTS (warning level for now)
 **********************/
 
-.holmes-debug div:empty, 
+.holmes-debug div:empty,
 .holmes-debug span:empty,
-.holmes-debug li:empty, 
+.holmes-debug li:empty,
 .holmes-debug p:empty,
-.holmes-debug td:empty, 
+.holmes-debug td:empty,
 .holmes-debug th:empty {
-	border: 2px solid #fd0;
+	outline: 2px solid #fd0;
 }
 
-	
+
 /* ====================================================== */
 /* = MESSAGES STYLES ==================================== */
 /* ====================================================== */
@@ -196,11 +196,11 @@ body.holmes-debug[leftmargin] {
 .holmes-debug img[alt=""]:hover::after,
 
 /* - EMPTY ELEMENTS - */
-.holmes-debug div:empty:hover::after, 
+.holmes-debug div:empty:hover::after,
 .holmes-debug span:empty:hover::after,
-.holmes-debug li:empty:hover::after, 
+.holmes-debug li:empty:hover::after,
 .holmes-debug p:empty:hover::after,
-.holmes-debug td:empty:hover::after, 
+.holmes-debug td:empty:hover::after,
 .holmes-debug th:empty:hover::after,
 
 /* - MISC ATTRIBUTES - */
@@ -254,28 +254,28 @@ body.holmes-debug[leftmargin] {
 /* ===================== */
 
 /* - DEPRECATED & NON-W3C CONTENT ELEMENTS - */
-.holmes-debug applet:hover::after, 
-.holmes-debug acronym:hover::after, 
-.holmes-debug center:hover::after, 
-.holmes-debug dir:hover::after, 
-.holmes-debug font:hover::after,   
-.holmes-debug strike:hover::after,  
+.holmes-debug applet:hover::after,
+.holmes-debug acronym:hover::after,
+.holmes-debug center:hover::after,
+.holmes-debug dir:hover::after,
+.holmes-debug font:hover::after,
+.holmes-debug strike:hover::after,
 .holmes-debug big:hover::after,
 .holmes-debug tt:hover::after,
 .holmes-debug marquee:hover::after,
 .holmes-debug hgroup:hover::after,
-.holmes-debug plaintext:hover::after,  
+.holmes-debug plaintext:hover::after,
 .holmes-debug xmp:hover::after,
-.holmes-debug *[bordercolor]:hover::after, 
-.holmes-debug *[bordercolordark]:hover::after, 
+.holmes-debug *[bordercolor]:hover::after,
+.holmes-debug *[bordercolordark]:hover::after,
 .holmes-debug *[bordercolorlight]:hover::after,
 
 .holmes-debug table[frame]:hover::after,
 .holmes-debug table[summary]:hover::after,
-.holmes-debug *[align]:hover::after, 
-.holmes-debug *[valign]:hover::after, 
-.holmes-debug *[bgcolor]:hover::after, 
-.holmes-debug *[clear]:hover::after, 
+.holmes-debug *[align]:hover::after,
+.holmes-debug *[valign]:hover::after,
+.holmes-debug *[bgcolor]:hover::after,
+.holmes-debug *[clear]:hover::after,
 .holmes-debug ul[type]:hover::after,
 .holmes-debug li[type]:hover::after {
 	border-radius: 0.5em;
@@ -295,12 +295,12 @@ body.holmes-debug[leftmargin] {
 /* = Deprecated body style Styles = */
 /* ================================ */
 
-body.holmes-debug[background]:hover::after, 
-body.holmes-debug[bgproperties]:hover::after, 
-body.holmes-debug[topmargin]:hover::after, 
-body.holmes-debug[rightmargin]:hover::after, 
-body.holmes-debug[bottommargin]:hover::after, 
-body.holmes-debug[leftmargin]:hover::after { 
+body.holmes-debug[background]:hover::after,
+body.holmes-debug[bgproperties]:hover::after,
+body.holmes-debug[topmargin]:hover::after,
+body.holmes-debug[rightmargin]:hover::after,
+body.holmes-debug[bottommargin]:hover::after,
+body.holmes-debug[leftmargin]:hover::after {
 	border-radius: 0.5em;
 	display:block;
 	padding: 1em;
@@ -318,7 +318,7 @@ body.holmes-debug[leftmargin]:hover::after {
 
 /* Fixes the case where a table may contain both errors and warnings - potentially other cases of this elsewhere */
 
-.holmes-debug td:empty:hover::after, 
+.holmes-debug td:empty:hover::after,
 .holmes-debug th:empty:hover::after {
 	top: 4em;
 }
@@ -350,7 +350,7 @@ body.holmes-debug[leftmargin]:hover::after {
 
 
 /**************
-	IMAGES 
+	IMAGES
 **************/
 
 .holmes-debug img:not([alt]):hover::after {
@@ -401,17 +401,17 @@ body.holmes-debug[leftmargin]:hover::after {
 	Based largely on http://www.w3.org/TR/html5/obsolete.html#obsolete
 *************************************************************************/
 
-.holmes-debug applet:hover::after, 
-.holmes-debug acronym:hover::after, 
-.holmes-debug center:hover::after, 
-.holmes-debug dir:hover::after, 
-.holmes-debug font:hover::after,   
-.holmes-debug strike:hover::after, 
+.holmes-debug applet:hover::after,
+.holmes-debug acronym:hover::after,
+.holmes-debug center:hover::after,
+.holmes-debug dir:hover::after,
+.holmes-debug font:hover::after,
+.holmes-debug strike:hover::after,
 .holmes-debug big:hover::after,
 .holmes-debug tt:hover::after,
 .holmes-debug marquee:hover::after, /* i've left this is because its naff bascially */
 .holmes-debug hgroup:hover::after,
-.holmes-debug plaintext:hover::after,  
+.holmes-debug plaintext:hover::after,
 .holmes-debug xmp:hover::after {
 	content:'Deprecated or Non-W3C element';
 }
@@ -428,16 +428,16 @@ body.holmes-debug[background]:hover::after {
 body.holmes-debug[bgproperties]:hover::after {
 	content:'Deprecated or Non-W3C body attribute bgproperties';
 }
- 
+
 body.holmes-debug[topmargin]:hover::after,
-body.holmes-debug[rightmargin]:hover::after, 
-body.holmes-debug[bottommargin]:hover::after, 
+body.holmes-debug[rightmargin]:hover::after,
+body.holmes-debug[bottommargin]:hover::after,
 body.holmes-debug[leftmargin]:hover::after {
 	content:'Deprecated or Non-W3C body attribute *margin';
-}	
+}
 
-.holmes-debug *[bordercolor]:hover::after, 
-.holmes-debug *[bordercolordark]:hover::after, 
+.holmes-debug *[bordercolor]:hover::after,
+.holmes-debug *[bordercolordark]:hover::after,
 .holmes-debug *[bordercolorlight]:hover::after {
 	content:'Deprecated or Non-W3C attribute bordercolor';
 }
@@ -463,7 +463,7 @@ body.holmes-debug[leftmargin]:hover::after {
 	content:'Deprecated or Non-W3C attribute clear';
 }
 
-.holmes-debug ul[type]:hover::after, 
+.holmes-debug ul[type]:hover::after,
 .holmes-debug li[type]:hover::after {
 	content:'Deprecated or Non-W3C list attribute type';
 }
@@ -472,11 +472,11 @@ body.holmes-debug[leftmargin]:hover::after {
 	EMPTY ELEMENTS (warning level for now)
 **********************/
 
-.holmes-debug div:empty:hover::after, 
+.holmes-debug div:empty:hover::after,
 .holmes-debug span:empty:hover::after,
-.holmes-debug li:empty:hover::after, 
+.holmes-debug li:empty:hover::after,
 .holmes-debug p:empty:hover::after,
-.holmes-debug td:empty:hover::after, 
+.holmes-debug td:empty:hover::after,
 .holmes-debug th:empty:hover::after {
 	content:'Empty element!';
 }
