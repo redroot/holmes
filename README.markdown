@@ -1,4 +1,4 @@
-holmes.css - CSS Markup Detective
+holmes.css - CSS Markup Detective [unmaintained]
 =================================
 
 Holmes is stand-alone diagnostic CSS stylesheet that can highlight
